@@ -161,5 +161,8 @@
   <ItemGroup>
     <None Include="Resources\billete-de-avion.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archivo Base de datos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
