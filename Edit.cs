@@ -15,10 +15,7 @@ namespace Carvajal
         public void UpdateRowSource(String index)
         {
             String item = this.estado.GetItemText(this.estado.SelectedItem);
-            String sql = "UPDATE vuelos SET nvuelo= '" + Nvuelo.Text + "',aerolinea= '" + Aerolinia.Text + "',ciudad_origen= '" + Corigen.Text + "'" +
-",hora_salida= '" + HoraSalida.Text + "',ciudad_destino='" + Cdestino.Text + "'" +
-",hora_entrada='" + Horallegada.Text + "',fecha='" + fecha.Text + "'" +
-",estado='" + item + "' WHERE id= '" + index + "';";
+            String sql = "UPDATE vuelos SET nvuelo= '" + Nvuelo.Text + "',aerolinea= '" + Aerolinia.Text + "',ciudad_origen= '" + Corigen.Text + "',hora_salida= '" + HoraSalida.Text + "',ciudad_destino='" + Cdestino.Text + "',hora_entrada='" + Horallegada.Text + "',fecha='" + fecha.Text + "',estado='" + item + "' WHERE id= '" + index + "';";
 
             SqlConnection connection = SQLConection.conexion();
             connection.Open();

@@ -32,8 +32,7 @@ namespace Carvajal
         private void button1_Click(object sender, EventArgs e)
         {
             String item = this.estado.GetItemText(this.estado.SelectedItem);
-            String sql = "INSERT INTO vuelos(ciudad_origen, ciudad_destino, fecha, hora_salida, hora_entrada, nvuelo, aerolinea, estado) " +
-                "VALUES ('" + Corigen.Text + "','" + Cdestino.Text + "','" + fecha.Text + "','" + HoraSalida.Text + "','" + Horallegada.Text + "','" + Nvuelo.Text + "','" + Aerolinia.Text + "','" + item + "')";
+            String sql = "INSERT INTO vuelos(ciudad_origen, ciudad_destino, fecha, hora_salida, hora_entrada, nvuelo, aerolinea, estado) VALUES ('" + Corigen.Text + "','" + Cdestino.Text + "','" + fecha.Text + "','" + HoraSalida.Text + "','" + Horallegada.Text + "','" + Nvuelo.Text + "','" + Aerolinia.Text + "','" + item + "')";
 
             SqlConnection connection = SQLConection.conexion();
             connection.Open();

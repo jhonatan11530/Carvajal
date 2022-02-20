@@ -1,0 +1,18 @@
+script para actualizar el datagridview del control de estado de vuelo
+Select count(id) as id from vuelos where estado Like 'Salida'
+
+
+script para eliminar el registro de vuelo
+DELETE FROM vuelos WHERE id=ID_VUELO
+
+script para actualizar el datagridview en el panel administrador
+Select count(id) as id from vuelos
+
+script para insertar los datos en la base de datos (Crear vuelo)
+INSERT INTO vuelos(ciudad_origen, ciudad_destino, fecha, hora_salida, hora_entrada, nvuelo, aerolinea, estado) VALUES ()
+
+script para editar vuelos y actualizar
+"UPDATE vuelos SET nvuelo= '" + Nvuelo.Text + "',aerolinea= '" + Aerolinia.Text + "',ciudad_origen= '" + Corigen.Text + "',hora_salida= '" + HoraSalida.Text + "',ciudad_destino='" + Cdestino.Text + "',hora_entrada='" + Horallegada.Text + "',fecha='" + fecha.Text + "',estado='" + item + "' WHERE id= '" + index + "';";
+
+script para visualizar los vuelos
+SELECT * FROM vuelos WHERE id='ID_VUELO'
