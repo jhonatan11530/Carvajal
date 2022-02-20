@@ -13,14 +13,19 @@ la base de datos usada es SQL SERVER 2019
 
 #SCRIPT BASE DE DATOS
 crear base de datos
+```
 CREATE DATABASE PRUEBA
+```
 crea la tabla usuario para el sistema de login
+```
 CREATE TABLE [dbo].[usuario](
 	[usuario] [varchar](6) NOT NULL,
 	[contraseña] [int] NULL
 ) ON [PRIMARY]
 GO
+```
 crea la tabla vuelo para el registro de vuelos
+```
 CREATE TABLE [dbo].[vuelos](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[nvuelo] [int] NOT NULL,
@@ -37,4 +42,4 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-
+```
