@@ -12,10 +12,13 @@ la base de datos usada es SQL SERVER 2019
 </p>
 
 #CONFIGURACION DE BASE DE DATOS
+
+```
 SERVER : LOCALHOST
 NAME DATABASE: carvajal
 USER: carvajal
 PWD : carvajal
+```
 
 #SCRIPT BASE DE DATOS
 crear base de datos
