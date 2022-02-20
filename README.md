@@ -11,6 +11,12 @@ la base de datos usada es SQL SERVER 2019
 <a><img src="https://github.com/jhonatan11530/jhonatan11530.github.io/blob/gh-pages/assets/img/sqlserver.svg" width="180" height="180"></a>
 </p>
 
+#CONFIGURACION DE BASE DE DATOS
+SERVER : LOCALHOST
+NAME DATABASE: carvajal
+USER: carvajal
+PWD : carvajal
+
 #SCRIPT BASE DE DATOS
 crear base de datos
 ```
